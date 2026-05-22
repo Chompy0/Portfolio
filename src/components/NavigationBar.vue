@@ -5,17 +5,16 @@
     <div
       class="flex flex-row justify-evenly py-2 bg-gradient-to-b from-purple-900 to-gray-900"
     >
-      <a v-for="link in links" :key="link.text" :href="link.url">
-        <button
-          class="relative inline-flex items-center justify-center p-0.5 overflow-hidden font-medium hover:bg-gradient-to-tl hover:scale-105  rounded-base group bg-gradient-to-br from-purple-600 to-blue-500 text-white hover:from-purple-600e focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80"
-        >
-          <span
-            class="relative px-4 py-2.5"
-          >
-            {{ link.text }}
-          </span>
-        </button>
-      </a>
+      <router-link
+        v-for="link in links"
+        :key="link.text"
+        :to="link.url"
+        class="relative inline-flex items-center justify-center p-0.5 overflow-hidden font-medium hover:scale-105 rounded-base group bg-gradient-to-br from-purple-600 to-blue-500 text-white focus:ring-4 focus:outline-none"
+      >
+        <span class="relative px-4 py-2.5">
+          {{ link.text }}
+        </span>
+      </router-link>
     </div>
   </nav>
 </template>
