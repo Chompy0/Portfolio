@@ -29,8 +29,8 @@
         </text>
         <br />
         <text class="text-white font-mono tracking-tight"
-          >20 And living in Nantes, I enjoy programming as a whole. Aspiring to
-          be a fullstack developer, I also code games in my free time.
+          >20 And living in Nantes, France, I enjoy programming as a whole. Aspiring to
+          be a fullstack developer, I also code games when I have time.
         </text>
       </div>
     </div>
